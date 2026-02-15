@@ -1,0 +1,11 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Tambahan: Reset style agar aman di semua browser HP */
+html, body {
+  height: 100%;
+  margin: 0;
+  overflow: hidden; /* Mencegah scroll yang tidak sengaja */
+  background-color: #fce7f3; /* Fallback color jika React telat loading */
+}
